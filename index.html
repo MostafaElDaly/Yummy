@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="bg-dark">
+      <div
+        style="left: -256.569px"
+        class="side-nav min-vh-100 d-flex position-fixed top-0 bg-dark"
+      >
+        <div
+          class="nav-tab bg-transparent text-white d-flex flex-column justify-content-between min-vh-100 p-4"
+        >
+          <div class="links">
+            <ul class="list-unstyled">
+              <li class="cursor-pointer  searchLi">Search</li>
+              <li class="cursor-pointer categoryLi">Categories</li>
+              <li class="cursor-pointer areaLi">Area</li>
+              <li class="cursor-pointer ingredientsLi">Ingredients</li>
+              <li class="cursor-pointer contact">Contact Us</li>
+            </ul>
+          </div>
+          <div class="nav-footer">
+            <div class="icons">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div class="footer">
+              <p>
+                Copyright Â© 2019 All Rights <br />
+                Reserved
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="nav-header bg-light d-flex flex-column justify-content-between py-4 text-center px-2 text-black"
+        >
+          <a href="">
+            <img src="image/logo.png" class="logo" alt="smile-Yummy" />
+          </a>
+          <i
+            class="fa-solid fa-align-justify fa-2x cursor-pointer open-close"
+          ></i>
+          <div>
+            <i class="fa-solid fa-globe d-block"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div
+        class="container text-center d-flex justify-content-center align-items-center position-relative"
+      >
+        <div class="loadingContainer ">
+          <div class="loading position-absolute">
+            <div class="lds-facebook">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container w-75 mx-auto my-4 searchContainer text-white">
+        <div class="row">
+          <div class="col-md-6 text-white">
+            <input
+              id="search"
+              class="form-control"
+              type="text"
+              placeholder="Search by Name"
+            />
+          </div>
+          <div class="col-md-6 text-white">
+            <input
+              id="searchByFirst"
+              class="form-control"
+              maxlength="1"
+              type="text"
+              placeholder="Search by first Letter"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="mealData" class="ps-3 mt-3 p-2 gy-4 row"></div>
+      </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
